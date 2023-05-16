@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Gill Sans';
+}
+body{
+    background: linear-gradient(black,rgb(207, 2, 190));
+}
+/* nav */
+Nav{
+    height: 5vh;
+    display: flex;
+    gap: 1%;
+    align-items: center;
+}
+nav img{
+    height: 5vh;
+    position: absolute;
+    right: 0.5rem
+}
+nav img:hover {
+    transform: rotate(300deg);
+}
+nav a{
+    text-decoration: none;
+    font-size: 3vh;
+    color: rgb(235, 4, 143);
+    
+}
+nav a:hover {
+    background-color: rgb(235, 4, 143);
+    color:rgb(50, 1, 77);
+}
+/* end nav */
+
+/* header */
+header{
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+     font-size: 5vh;
+}
+header h2{
+    font-size: 3vh;
+}
+/* end header */
+
+/* main */
+main{
+    height: 75vh;
+}
+img{
+    object-fit: cover;
+}
+
+.banner1{
+    height: 37.5vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;  
+}
+.principalImage{
+    height: 80%;
+    width: 80%;
+    }
+
+ .banner2{
+    height: 37.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+ }   
+ .text1{
+    width: 30%;
+    
+}
+.secondImage{
+    height: 80%;
+    
+}
+
+.aboutUs{
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.aboutUsImage{
+    height: 20vh;
+    width: 30%;
+}
+.aboutUsText{
+    font-size: 2,5vh;
+    width: 30%;
+    
+}
+.contact{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imageContact{
+    width: 25%;
+    height: 85%;
+}
+.textContact{
+    font-size: 3vh;
+}
+.linkscontact{
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.table{
+    height: 80%;
+    width: 60%;    
+}
+table, thead, tbody, tr, th, td{
+    border: 2px solid rgb(26, 0, 22);
+    border-collapse: collapse;
+}
+.benefictsTips{
+    display: flex;
+}
+.beneficts1, .beneficts2{
+    height: 75vh;
+    width: 49.5%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.beneficts1{
+    justify-content: space-evenly;
+}
+.benefictsImage{
+    height: 40%;
+    object-fit: contain;
+}
+.beneficts2{
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.list{
+    width: 60%;
+}
+.none{
+    list-style-type: none;
+}
+
+/* end main */
+
+/* footer */
+
+footer{
+    height: 8vh;
+    font-size: 2vh;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    color: rgb(56, 0, 35);
+}
+/* end footer */
