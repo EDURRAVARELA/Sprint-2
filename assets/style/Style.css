@@ -2,68 +2,92 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: white;
     font-family: 'Gill Sans';
 }
+h1, h2, p, a{
+    color: white;
+}
 body{
-    background: linear-gradient(black,rgb(207, 2, 190));
+    background: rgb(210,35,140);
+background: radial-gradient(circle, rgba(210,35,140,1) 0%, rgba(0,0,0,1) 71%);
 }
+
+img{
+    object-fit: cover;
+    border-radius: 14px;
+     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+h2, h1{
+    text-align: center;
+}
+h2{
+    font-size: 3vh;
+}
+
 /* nav */
-Nav{
-    height: 5vh;
+header{
+    min-height: 10vh;
     display: flex;
-    gap: 1%;
-    align-items: center;
+    flex-direction: column;
+
 }
+
+Nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav1{
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+
+
 nav img{
     height: 5vh;
-    position: absolute;
-    right: 0.5rem
 }
-nav img:hover {
-    transform: rotate(300deg);
-}
+
 nav a{
     text-decoration: none;
     font-size: 3vh;
     color: rgb(235, 4, 143);
+    border-radius: 14px;
+    padding: 0.3rem;
     
 }
 nav a:hover {
     background-color: rgb(235, 4, 143);
     color:rgb(50, 1, 77);
 }
+nav a[href="#"]{
+    background-color: rgb(235, 4, 143);
+    color:rgb(50, 1, 77);
+}
 /* end nav */
 
 /* header */
-header{
-    height: 12vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 header h1{
-     font-size: 5vh;
+     font-size: 4vh;
+     align-self: center;
 }
 header h2{
-    font-size: 3vh;
+    align-self: center;
 }
 /* end header */
 
 /* main */
 main{
-    height: 75vh;
-}
-img{
-    object-fit: cover;
+    min-height: 82vh;
 }
 
 .banner1{
-    height: 37.5vh;
-   display: flex;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
    justify-content: center;
-   align-items: center;  
+   align-items: center;
+   gap: 1vh;
 }
 .principalImage{
     height: 80%;
@@ -71,7 +95,7 @@ img{
     }
 
  .banner2{
-    height: 37.5vh;
+    min-height: 50vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,12 +107,12 @@ img{
     
 }
 .secondImage{
-    height: 80%;
+    height: 40vh;
     
 }
 
 .aboutUs{
-    height: 25vh;
+    min-height: 25vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -96,23 +120,25 @@ img{
     padding-right: 10%;
 }
 .aboutUsImage{
-    height: 20vh;
+    height: 23vh;
     width: 30%;
 }
 .aboutUsText{
     font-size: 2,5vh;
-    width: 30%;
+    width: 30vh;
     
 }
 .contact{
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 2vh;
+    gap: 2vh;
 }
 .imageContact{
-    width: 25%;
+    width: 30vh;
     height: 85%;
 }
 .textContact{
@@ -123,47 +149,83 @@ img{
     justify-content: space-evenly;
 }
 .mainTable{
+    min-height: 82vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
 .table{
-    height: 80%;
-    width: 60%;    
+    height: 65vh;
+    width: 60vh;    
 }
 table, thead, tbody, tr, th, td{
     border: 2px solid rgb(26, 0, 22);
     border-collapse: collapse;
+    color: white;
 }
 .benefictsTips{
     display: flex;
-}
-.beneficts1, .beneficts2{
-    height: 75vh;
-    width: 49.5%;
-    display: flex;
     flex-direction: column;
-    
 }
 .beneficts1{
+    min-height: 40vh;
+    display: flex;
     justify-content: space-evenly;
-}
-.benefictsImage{
-    height: 40%;
-    object-fit: contain;
-}
-.beneficts2{
-    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    color: white;
+}
+
+.benefictsImage{
+    height: 32vh;
+    width: 40%;
 }
 .list{
-    width: 60%;
+    width: 35%;
+}
+.list2{
+    padding-left: 2vh;
 }
 .none{
     list-style-type: none;
 }
+.raffle{
+    display: flex;
+}
+.map{
+    width: 70vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3vh;
+}
+iframe{
+    width: 45vw;
+    height: 40vh;
+}
+.formContact{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+.messageInput{
+    height: 15vh;
+}
+.sendButtom{
+ align-self: flex-end;
+}
+
+
 
 /* end main */
 
@@ -176,7 +238,78 @@ footer{
     align-items: center;
     justify-content: center;
 }
-footer p{
-    color: rgb(56, 0, 35);
-}
 /* end footer */
+
+@media only screen and (max-width: 1023px) {
+    body{
+        background: rgb(210,35,140);
+background: linear-gradient(0deg, rgba(210,35,140,1) 11%, rgba(0,0,0,1) 100%);
+    }
+    nav{
+        flex-direction: column-reverse;
+    }
+    nav a{
+        font-size: 2vh;
+    }
+    .nav1{
+        flex-direction: column;
+    }
+
+    .principalImage{
+        width: 90%;
+    }
+    .banner2{
+        flex-direction: column-reverse;
+        min-height: 50vh;
+        gap: 2vh;
+    }
+    .text1{
+        width: 60%;
+    }
+    .secondImage{
+        width: 80%;
+    }
+    .linkscontact{
+        flex-direction: column;
+        padding-left: 6vh;
+    }
+    .aboutUs{
+        flex-direction: column;
+        min-height: 25vh;
+        gap: 2vh;
+        padding-top: 2vh;
+    }
+    .aboutUsImage{
+        width: 80%;
+        height: 30vh;
+    }
+    .table{
+        width: 90%;
+    }
+    .beneficts1{
+        flex-direction: column;
+        padding-top: 3vh;
+        gap: 3vh;
+    }
+   .benefictsImage{
+        width: 80%;
+        height: 40vh;
+   }
+   .list{
+    width: 50vh;
+   }
+   .raffle{
+    flex-direction: column-reverse;
+    align-items: center;
+   }
+   .formContact{
+    width: 90vh;
+    padding-top: 2vh;
+   }
+   iframe{
+    width: 45vh;
+   }
+   .map{
+    padding-top: 2vh;
+   }
+}
